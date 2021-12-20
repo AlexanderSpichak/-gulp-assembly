@@ -1,0 +1,29 @@
+// Сброс стилей
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh; // body занимает весь экран
+    scroll-behavior: smooth; // Плавный скролл к анкорам
+    text-rendering: optimizeSpeed; // Более приятный текст
+    line-height: 1.5; // Оптимальные отступы
+}
+// Сброс стилизации списков у которых есть класс
+ul[class],
+ol[class] {
+    list-style: none;
+}
+// Резиновые изображения с блочным поведением
+img {
+    max-width: 100%;
+    display: block;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
