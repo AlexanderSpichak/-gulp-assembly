@@ -84,7 +84,7 @@ exports.scripts = scripts;
 exports.watching = watching;
 exports.browsersync = browsersync;
 exports.build = build
-exports.default = parallel(watching, browsersync, images, scripts);
+exports.default = parallel(watching, browsersync, images, scripts, styles);
 exports.golife = build
 
 
