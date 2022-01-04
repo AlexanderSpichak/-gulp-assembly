@@ -47,7 +47,7 @@ function browsersync() {
 }
 //Оптимизация изображений.
 const images = function () {
-    return src('app/images/**/*')
+    return src('app/img/**/*')
         .pipe(plumber())
         .pipe(imagemin([
             imagemin.gifsicle({ interlaced: true }),
@@ -61,7 +61,7 @@ const images = function () {
             })
         ]))
         // .pipe(webp()) - Конвертация в WebP.
-        .pipe(dest('dist/images'))
+        .pipe(dest('dist/img'))
 }
 function watching() {
     watch(['app/scss/**/*.scss'], styles); //Автоматическая компиляция Sass -> css
